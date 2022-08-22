@@ -24,37 +24,76 @@
         <button class="modal-close-button" data-modal-close>X</button>
         <form class="modal-form" name="order-service">
           <p class="modal-form-label">Zostaw swoje dane w formularzu poniżej</p>
-          <div class="modal-form-inputs">
-            <label class="modal-form-input-label">Imię</label>
-            <input class="modal-form-input-primary" type="text" name="Name" />
-            <label class="modal-form-input-label">Telefon</label>
+          <div class="modal-form-inputs-box">
+            <div class="modal-form-input">
+              <label class="modal-form-input-label" for="modal_form_input"
+                >Imię</label
+              >
+              <svg class="modal-form-input-icon">
+                <use
+                  href="./images/icons/icons-min.svg#icon-person-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+            <input
+              class="modal-form-input-primary"
+              type="text"
+              name="Name"
+              id="modal_form_input"
+            />
+            <div class="modal-form-input">
+              <label class="modal-form-input-label">Telefon</label>
+              <svg class="modal-form-input-icon">
+                <use
+                  href="./images/icons/icons-min.svg#icon-phone-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
             <input
               class="modal-form-input-primary"
               type="tel"
               name="Phone_number"
             />
-            <label class="modal-form-input-label">Email</label>
+            <div class="modal-form-input">
+              <label class="modal-form-input-label">Email</label>
+              <svg class="modal-form-input-icon">
+                <use
+                  href="./images/icons/icons-min.svg#icon-email-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
             <input
               class="modal-form-input-primary"
               type="email"
               name="Email_address"
             />
             <label class="modal-form-input-label">Komantarz</label>
-            <input
+            <textarea
               class="modal-form-input-primary"
-              type="text"
               name="Comment"
-            />
+              placeholder="Wprowadź tekst"
+            ></textarea>
           </div>
           <div class="modal-form-checkbox">
+            <input
+              class="modal-form-checkbox-input"
+              type="checkbox"
+              name="terms_policy_agree"
+              id="terms_policy_agree"
+              value="Yes"
+            />
             <label class="modal-form-checkbox-label" for="terms_policy_agree">
-              <input
-                type="checkbox"
-                name="terms_policy_agree"
-                id="terms_policy_agree"
-                value="Yes"
-              />
-              <p class="modal-form-checkbox-text">
+              <span>
+                <svg class="modal-form-checkbox-icon">
+                  <use href="./images/icons/icons-min.svg#icon-not-check"></use>
+                </svg>
+                <svg class="modal-form-checkbox-icon">
+                  <use
+                    href="./images/icons/icons-min.svg#icon-icon-check"
+                  ></use>
+                </svg>
+              </span>
+              <span class="modal-form-checkbox-text">
                 Oświadczam iż akceptuję
                 <a
                   class="modal-form-checkbox-link"
@@ -69,7 +108,7 @@
                   target="_blank"
                   >Politykę prywatności.</a
                 >
-              </p>
+              </span>
             </label>
           </div>
           <button class="modal-form-button">
